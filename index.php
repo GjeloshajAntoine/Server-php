@@ -1,10 +1,14 @@
 <?php
-$action=$_GET["action"];
 define('Controller',"controller/");
 define('Views','views/');
+if (!isset($_GET["action"])) {
+  $action="chat";
+}else {
+  $action=$_GET["action"];
+}
 switch ($action) {
   case 'chat':
-    include Controller.'chatboxb_cont.php';
+    include Controller.'chatbox_cont.php';
     $controller=new ChatBoxController();
     break;
   case 'login':
