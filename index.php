@@ -4,10 +4,10 @@ define('Controller',"controller/");
 define('Views','views/');
 switch ($action) {
   case 'chat':
-    include Controller.'chatbox-cont.php';
+    include Controller.'chatboxb_cont.php';
+    $controller=new ChatBoxController();
     break;
   case 'login':
-    echo 'login';
     include Controller.'log_in.php';
     $controller=new LoginController();
     break;
