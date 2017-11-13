@@ -7,22 +7,28 @@ switch ($action) {
     include Controller.'chatbox-cont.php';
     break;
   case 'login':
+    echo 'login';
     include Controller.'log_in.php';
     $controller=new LoginController();
     break;
   case 'loginform':
+    include Controller.'log_in.php';
+    $controller=new LoginController();
     break;
   case 'signup':
     include Controller.'new_user.php';
+    $controller=new SigninController();
     break;
   case 'signupform':
     include Controller.'new_user.php';
+    $controller=new SigninController();
     break;
   case 'logout':
     include Controller."log_out.php";
     $controller=new LoginController();
     break;
   default:
+    echo 'default';
     include Controller.'chatbox_cont.php';
     $controller=new ChatBoxController();
     break;
