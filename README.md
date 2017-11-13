@@ -15,7 +15,7 @@ Nico
 Antoine
 
 * Index.php
-* head
+* head - (ajouter deux boutons redirigeant vers le formulaire signin (s'enregistrer) et formulaire login (se connecter)
 * modele_user avec Marie-Ange
 
 Weich
