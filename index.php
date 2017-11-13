@@ -1,23 +1,24 @@
 <?php
 $action=$_GET["action"];
-$controller="controller/";
+define('Controller',"controller/")
 switch ($action) {
   case 'login':
-    include $controller.'log_in.php';
+    include Controller.'log_in.php';
+    LoginController
     break;
   case 'loginform':
     break;
   case 'signup':
-    include $controller.'new_user.php';
+    include Controller.'new_user.php';
     break;
   case 'signupform':
-    include $controller.'new_user.php';
+    include Controller.'new_user.php';
     break;
-  case 'disconnect':
-    incl
+  case 'logout':
+    include Controller."log_out.php";
     break;
   default:
-
+    include Controller.'';
     break;
 }
 ?>
