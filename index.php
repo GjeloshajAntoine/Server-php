@@ -1,10 +1,14 @@
 <?php
 $action=$_GET["action"];
-define('Controller',"controller/")
+define('Controller',"controller/");
+define('Views','views/');
 switch ($action) {
+  case 'chat':
+    include Controller.'chatbox-cont.php';
+    break;
   case 'login':
     include Controller.'log_in.php';
-    LoginController
+    $controller=new LoginController();
     break;
   case 'loginform':
     break;
@@ -16,9 +20,12 @@ switch ($action) {
     break;
   case 'logout':
     include Controller."log_out.php";
+    $controller=new LoginController();
     break;
   default:
-    include Controller.'';
+    include Controller.'chatbox_cont.php';
+    $controller=new ChatBoxController();
     break;
 }
+$controller->run();
 ?>
