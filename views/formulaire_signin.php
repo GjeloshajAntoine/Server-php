@@ -14,16 +14,18 @@
 
     <h2>Formulaire d'inscription</h2>
 
-    <form action="../controller/new_user.php" method="post">
+    <form action="../controller/log_in.php" onsubmit="return verifForm(this)">
+        <!-- permet de bloquer l'envoi du formulaire si l'un des champ n'est pas correctement rempli -->
 
       <div>
         <label for="pseudo">Pseudo : </label>
-        <input type = "text" id="pseudo" placeholder="Votre pseudo" />
+        <input type = "text" name="pseudo" id="pseudo" placeholder="Votre pseudo" onblur="verifPseudo(this)" />
+        <!-- onBlur, déclenché lorsque le champ en question perd le focus, on utilise le mot-clé this puisque le champ à vérifier est justement celui qui vient de perdre le focus -->
       </div>
 
       <div>
         <label for="email">Email : </label>
-        <input type = "email" id="email" placeholder="Votre email" />
+        <input type = "text" name="email" size="30" id="email" placeholder="Votre email" onblur="verifMail(this)" />
       </div>
 
       <div>
