@@ -37,7 +37,7 @@ Caro
 ### Pour formulaire signin (inscription)
 
 pseudo
-email 
+email
 pass
 
 ### Pour formulaire login (connexion)
@@ -53,4 +53,14 @@ message
 auteur
 
 
+## Suggestions update (by James)
 
+* Compléter les controllers :
+  * ajout include model
+  * (si controller messages, parametre = quelle action?)
+* Modifier modele_message :
+  * 2 fonctions (2actions : addMsg et getMsgs)
+* Modifier header.php/views :
+  * supprimer doctype etc... dans header.php
+  * ajout include header.php dans toutes les vues (de cette manière chacun peut avoir son css easy)
+* Variables $_SESSION[]
