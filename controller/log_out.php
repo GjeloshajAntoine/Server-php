@@ -2,7 +2,7 @@
 class LogoutController{
   public function __construct(){}
   public function run(){
-    require_once Views . 'formulaire_logout.php';
+    require_once Views . 'log_in.php';
   }
 }
  ?>
