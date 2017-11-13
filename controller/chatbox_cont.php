@@ -1,8 +1,8 @@
 <?php
-class SigninController{
+class ChatBoxController{
   public function __construct(){}
   public function run(){
-    require_once Views . 'formulaire_signin.php';
+    require_once Views . 'chatbox.php';
   }
 }
  ?>

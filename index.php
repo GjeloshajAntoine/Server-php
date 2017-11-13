@@ -1,23 +1,37 @@
 <?php
 $action=$_GET["action"];
-$controller="controller/";
+define('Controller',"controller/");
+define('Views','views/');
 switch ($action) {
+  case 'chat':
+    include Controller.'chatbox-cont.php';
+    break;
   case 'login':
-    include $controller.'log_in.php';
+    echo 'login';
+    include Controller.'log_in.php';
+    $controller=new LoginController();
     break;
   case 'loginform':
+    include Controller.'log_in.php';
+    $controller=new LoginController();
     break;
   case 'signup':
-    include $controller.'new_user.php';
+    include Controller.'new_user.php';
+    $controller=new SigninController();
     break;
   case 'signupform':
-    include $controller.'new_user.php';
+    include Controller.'new_user.php';
+    $controller=new SigninController();
     break;
-  case 'disconnect':
-    incl
+  case 'logout':
+    include Controller."log_out.php";
+    $controller=new LoginController();
     break;
   default:
-
+    echo 'default';
+    include Controller.'chatbox_cont.php';
+    $controller=new ChatBoxController();
     break;
 }
+$controller->run();
 ?>
