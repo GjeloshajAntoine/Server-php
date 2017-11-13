@@ -3,17 +3,23 @@
 1. Trouver le fichier httpd.conf (qui peut se trouver dans opt/lampp/etc)
 2. Ouvrir le fichier httpd.conf et taper Ctrl+F pour rechercher "ServerName"
 On aura quelque chose qui ressemble à cela:
+
+````code
 #ServerName www.example.com:@@Port@@
 # XAMPP
 ServerName localhost
+````
 3. On cherche à cibler ServerName localhost et le remplacer par l'adresse IPV4 -Adresse de la personne qui va jouer le rôle de serveur. Elle doit être identique pour tout les membres du groupe.
 4. Pour trouver cette addresse, la personne qui va jouer le rôle de serveur doit aller dans l'onglet "Search your computer et taper "System Settings"
 5. Puis aller sur l'icone Network
 6. Cliquer sur la flèche orange à coté de BC-HUB et relevé l'adresse qui est indiqué à coté de IPv4 Adress qui ressemble à ceci: 10.20.0.141
 7. Retourner dans httpd.conf et remplacer localhost par cette adresse. On optient quelque chose qui ressemble à cela:
+
+````code
 #ServerName www.example.com:@@Port@@
 # XAMPP
 ServerName 10.20.0.141
+````
 8. Enregister le fichier httpd.conf avec l'adresse de la personne qui fait le rôle de serveur pour le groupe.
 9.La personne qui joue le rôle de serveur doit créer un répository commun sur github et ajouter tout les membres du groupe comme collaborateurs.
 10. Chaque collaborateurs doit accepter le mail envoyer par le membre serveur sur son email pour pouvoir participer au répository commun sur github.
