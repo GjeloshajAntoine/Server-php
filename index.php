@@ -28,7 +28,6 @@ switch ($action) {
     $controller=new LoginController();
     break;
   default:
-    echo 'default';
     include Controller.'chatbox_cont.php';
     $controller=new ChatBoxController();
     break;
