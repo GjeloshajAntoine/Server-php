@@ -37,7 +37,7 @@ Caro
 ### Pour formulaire signin (inscription)
 
 pseudo
-email 
+email
 pass
 
 ### Pour formulaire login (connexion)
@@ -53,4 +53,16 @@ message
 auteur
 
 
+## Suggestions update (by James)
 
+* Compléter les controllers :
+  * ajout include model
+  * (si controller messages, parametre = quelle action?)
+* Modifier modele_message :
+  * 2 fonctions (2actions : addMsg et getMsgs)
+  * modifier db et fcts pour avoir le pseudo direct (+ simple pour la vue)
+* Modifier header.php/views :
+  * supprimer doctype etc... dans header.php
+  * ajout include header.php dans toutes les vues (de cette manière chacun peut avoir son css easy sauf le header -> NEED A SOLUTION[maybe inclure le css du header dans le css de chaque vue s'il n'est pas trop long])
+* Se mettre d'accord sur les "action" des formulaires et btns header
+* Variables $_SESSION[] ?
