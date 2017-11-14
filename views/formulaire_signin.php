@@ -40,8 +40,8 @@
     </form>
 
     <!-- lien vers script javascript -->
-    <!-- <script src="assets/js/app.js"></script> -->
-    <script src="app.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- <script src="app.js"></script> -->
 
   </body>
 
