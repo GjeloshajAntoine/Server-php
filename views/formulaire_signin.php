@@ -22,6 +22,7 @@
             <input type = "text" name="pseudo" id="pseudo" placeholder="Votre pseudo" autofocus onblur="verifPseudo(this)" />
             <!-- onBlur, déclenché lorsque le champ en question perd le focus, on utilise le mot-clé this puisque le champ à vérifier est justement celui qui vient de perdre le focus -->
           </div>
+          <div id="error_pseudo"></div>
 
           <div>
             <label for="email">Email : </label>

@@ -18,13 +18,13 @@ function verifPseudo(champ)
    if(champ.value.length < 3 || champ.value.length > 25) // vérifie la longueur du pseudo pourra compter minimum 3 caractères et maximum 25 caractères. Vérifie en même temps que le champ n'est pas vide.
    {
       surligne(champ, true);
-      console.log ("erreur pseudo");
-      alert ("Veuillez entrer votre pseudo (minimum 3 caractères, maximum 25 caractères!)");
+      document.getElementById('error_pseudo').innerHTML="Votre pseudo doit compter entre 3 et 25 caractères!";
       return false;
    }
    else
    {
       surligne(champ, false);
+      document.getElementById('error_pseudo').innerHTML="";
       return true;
    }
 }

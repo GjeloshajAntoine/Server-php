@@ -21,6 +21,7 @@
         <label for="pseudo">Pseudo : </label>
         <input type = "text" name="pseudo" id="pseudo"  placeholder="Votre pseudo" autofocus onblur="verifPseudo(this)" />
       </div>
+      <div id="error_pseudo"></div>
 
       <div>
         <label for="pass">Mot de passe :</label>
