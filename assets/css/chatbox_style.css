@@ -23,15 +23,37 @@ td{
   height: 4vh;
   font-family: sans-serif;
 }
+.cont{
+  display: block;
+  margin: auto;
+  height: 40px;
+  margin-bottom: 3vh;
+}
 .date{
-  width: 12%;
+  display: block;
+  margin-right: 50px;
+  float: left;
+  width: 5%;
 }
 .pseudo{
-  width: 8%;
+  display: block;
+  margin-right: 50px;
+  float: left;
+  width: 10%;
+}
+.text{
+  width: 75%;
+  display: block;
+  float: right;
 }
 .inputTexte{
   width: 80%;
 }
 .submit{
   width: 15%;
+}
+@media only screen and (max-width: 700px){
+  .cont{
+    margin-bottom: 10vh;
+  }
 }
