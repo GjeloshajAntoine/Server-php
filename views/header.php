@@ -13,9 +13,9 @@
   <body>
 
     <div id="header">
-      <a class="bouton_header" href="#">Se déconnecter</a>
-      <a class="bouton_header" href="#">Se connecter</a>
-      <a class="bouton_header" href="#">S'inscrire</a>
+      <a class="bouton_header" href="./index.php?action=logout">Se déconnecter</a>
+      <a class="bouton_header" href="./index.php?action=login">Se connecter</a>
+      <a class="bouton_header" href="./index.php?action=signup">S'inscrire</a>
 
     </div>
 
