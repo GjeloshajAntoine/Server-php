@@ -1,7 +1,8 @@
 
+
   <!--<link rel="stylesheet" href="../assets/css/chatbox_style.css">-->
     <div>
-      <h1>Welcome on our ChatBox !</h1>
+      <h2>Welcome on our ChatBox !</h2>
       <!-- Table pour afficher 10 messages -->
       <form action="" method="post">
         <?php for ($i=0; $i <10 ; $i++) { ?>
