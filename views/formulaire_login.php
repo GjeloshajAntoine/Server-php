@@ -14,7 +14,7 @@
 
     <h2>Formulaire de connection</h2>
 
-    <form action="index.php?action=loginform" onsubmit="return verifForm(this)">
+    <form action="index.php?action=loginform" onsubmit="return verifForm(this)" method="post">
       <!-- permet de bloquer l'envoi du formulaire si l'un des champ n'est pas correctement rempli -->
 
       <div>

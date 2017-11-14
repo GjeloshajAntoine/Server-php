@@ -14,7 +14,7 @@
 
     <h2>Formulaire d'inscription</h2>
 
-        <form action="index.php?action=signinform" onsubmit="return verifForm(this)">
+        <form action="index.php?action=signinform" onsubmit="return verifForm(this)" method="post">
             <!-- permet de bloquer l'envoi du formulaire si l'un des champ n'est pas correctement rempli -->
 
           <div>
