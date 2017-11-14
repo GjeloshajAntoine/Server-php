@@ -1,6 +1,6 @@
 <?php
 try
-{
+{ //insérer IP valable à la place de localhost
 	$db = new PDO('mysql:host=localhost;dbname=server-php;charset=utf8', 'root', 'root');
 }
 catch(Exception $e)
@@ -11,13 +11,12 @@ catch(Exception $e)
 Ajouter le message dans la base de données.
 Récupere le message pour l'afficher dans la chatbox.
 */
-function add($message, $idAuteur) {
-	$req =$db->prepare("INSERT INTO messages (message, idAuteur, dateEnvoi) VALUES(:message, :idAuteur, NOW())");
+function add($message, $auteur) {
+	$req =$db->prepare("INSERT INTO messages (message, auteur, dateEnvoi) VALUES(:message, :auteur, NOW())");
 	$req->execute([
 	  "message"=>$message,
-	  "idAuteur"=>$idAuteur
+	  "auteur"=>$auteur
 	]);
-	return $req->fetchAll();
 }
 function recup() {
 	$req =$db->query("SELECT * FROM messages ORDER BY id DESC LIMIT 0,10");
