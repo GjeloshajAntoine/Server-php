@@ -1,0 +1,37 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+body div{
+  width: 100%;
+  height: 100vh;
+  background-color: #F7F7F7;
+}
+h1{
+  margin: 0;
+  padding: 5vh 0 5vh 0;
+  text-align: center;
+}
+table{
+  border: solid black 1px;
+  margin: auto;
+  margin-top: 5vh;
+  width: 80%
+}
+td{
+  border-bottom: solid black 1px;
+  height: 4vh;
+  font-family: sans-serif;
+}
+.date{
+  width: 12%;
+}
+.pseudo{
+  width: 8%;
+}
+.inputTexte{
+  width: 80%;
+}
+.submit{
+  width: 15%;
+}
