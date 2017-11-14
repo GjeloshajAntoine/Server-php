@@ -21,17 +21,17 @@ function add($message, $auteur) {
 	        die('Erreur : '.$e->getMessage());
 	}
 	$req =$db->prepare("INSERT INTO messages (message, auteur, dateEnvoi) VALUES(:message, :auteur, NOW())");
-	$req->execute([
+	$req->execute([//array associatif
 	  "message"=>$message,
 	  "auteur"=>$auteur
 	]);
 }
 function recup() {
-	try
+	try//test si erreur
 	{ //insérer IP valable à la place de localhost
 		$db = new PDO('mysql:host=localhost;dbname=server-php;charset=utf8', 'root', 'root');
 	}
-	catch(Exception $e)
+	catch(Exception $e)//récupére l'érreur l'affiche
 	{
 	        die('Erreur : '.$e->getMessage());
 	}
@@ -41,5 +41,5 @@ function recup() {
 	return $data;
 }
 
-var_dump(recup());
+//var_dump(recup());
  ?>
