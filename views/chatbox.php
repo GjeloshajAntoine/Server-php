@@ -1,6 +1,6 @@
 
 
-  <!--<link rel="stylesheet" href="../assets/css/chatbox_style.css">-->
+  <link rel="stylesheet" href="../assets/css/chatbox_style.css">
     <div>
       <h2>Welcome on our ChatBox !</h2>
       <!-- Table pour afficher 10 messages -->
@@ -8,11 +8,8 @@
         <?php for ($i=0; $i <10 ; $i++) { ?>
         	<div class="cont">
         		<div class="date"> <?php $dateEnvoi = (isset($data[$i]['dateEnvoi'])) ? $data[$i]['dateEnvoi'] : "" ; echo $dateEnvoi; ?> </div>
-            <p>test</p>
         		<div class="pseudo"> <?php $pseudo = (isset($data[$i]['pseudo'])) ? $data[$i]['pseudo'].' :' : '' ; echo $pseudo; ?> </div>
-            <p>test</p>
         		<div class="text"> <?php $message = (isset($data[$i]['message'])) ? $data[$i]['message'] : '' ; echo $message; ?> </div>
-            <p>test</p>
         	</div>
         <?php } ?>
           <!--Barre d'envoi-->
