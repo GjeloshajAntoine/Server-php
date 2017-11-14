@@ -34,7 +34,7 @@ switch ($action) { // On définit les actions
     break;
   case 'logout':
     include Controller."log_out.php";
-    $controller=new LoginController();
+    $controller=new LogoutController();
     break;
   default:
     include Controller.'chatbox_cont.php';
