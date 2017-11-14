@@ -19,19 +19,25 @@
 
       <div>
         <label for="pseudo">Pseudo : </label>
-        <input type = "text" name="pseudo" id="pseudo"  placeholder="Votre pseudo" onblur="verifPseudo(this)" />
+        <input type = "text" name="pseudo" id="pseudo"  placeholder="Votre pseudo" autofocus onblur="verifPseudo(this)" />
       </div>
+      <div id="error_pseudo"></div>
 
       <div>
         <label for="pass">Mot de passe :</label>
-        <input type = "password" id="pass" placeholder="Votre mot de passe" />
+        <input type = "password" id="pass" name="pass" placeholder="Votre mot de passe" />
       </div>
 
       <div class="button">
-        <input type="submit" value="Se connecter"/>
+        <input class="button"type="submit" value="Se connecter"/>
       </div>
 
     </form>
+
+    <!-- lien vers script javascript -->
+    <script src="assets/js/app.js"></script>
+    <!-- <script src="app.js"></script> -->
+
   </body>
 
 </html>

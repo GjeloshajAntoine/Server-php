@@ -13,6 +13,11 @@ label
   float: left;
 }
 
+input
+{
+  width: 200px;
+}
+
 #header
 {
   display: block;
@@ -37,4 +42,21 @@ label
   float: right;
   margin-right: 15px;
   margin-top: 20px;
+}
+
+.button
+{
+  margin-top: 15px;
+}
+
+#error_mail
+{
+  color: red;
+  font-weight: bold;
+}
+
+#error_pseudo
+{
+  color: red;
+  font-weight: bold;
 }

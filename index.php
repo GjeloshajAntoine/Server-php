@@ -1,12 +1,17 @@
 <?php
-define('Controller',"controller/");
-define('Views','views/');
-if (!isset($_GET["action"])) {
+define('Controller',"controller/"); //définition de constante (manière de le noter systématiquement)
+define('Views','views/'); //définition de constante (manière de le noter systématiquement)
+
+
+include Views . 'header.php'; // inclut le header avec boutons sur toutes les pages
+
+if (!isset($_GET["action"])) { // si on ne met rien dans la page, on arrive sur la page chat par défaut
   $action="chat";
 }else {
   $action=$_GET["action"];
 }
-switch ($action) {
+
+switch ($action) { // On définit les actions
   case 'chat':
     include Controller.'chatbox_cont.php';
     $controller=new ChatBoxController();
@@ -29,12 +34,12 @@ switch ($action) {
     break;
   case 'logout':
     include Controller."log_out.php";
-    $controller=new LoginController();
+    $controller=new LogoutController();
     break;
   default:
     include Controller.'chatbox_cont.php';
     $controller=new ChatBoxController();
     break;
 }
-$controller->run();
+$controller->run(); // On lance l'action en fonction du case définit plus haut
 ?>
