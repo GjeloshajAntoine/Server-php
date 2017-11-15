@@ -4,18 +4,14 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
     <link rel="stylesheet" href="../assets/css/style.css">
-=======
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
->>>>>>> 7d3f155af41c9c679db5f55e570513345cbc597b
     <title>Formulaire Signin</title>
   </head>
 
   <body>
-<<<<<<< HEAD
+
     <form action="../controller/new_user.php" method="post">
 
       <div>
@@ -32,9 +28,8 @@
         <label for="pass">Mot de passe :</label>
         <input type = "pass" id="pass" />
       </div>
-      
+
     </form>
-=======
 
     <h2>Formulaire d'inscription</h2>
 
@@ -68,7 +63,6 @@
     <script src="assets/js/app.js"></script>
     <!-- <script src="app.js"></script> -->
 
->>>>>>> 7d3f155af41c9c679db5f55e570513345cbc597b
   </body>
 
 </html>
