@@ -10,7 +10,7 @@ class SigninController{
            if (($_POST['pseudo'] !="") && ($_POST['email'] !="") && ($_POST['pass'] !=""))
            {
              //On vérifie si longueur pseudo est bien situé entre 3 et 25 caractères
-             if ((strlen ($POST['pseudo']) >= 3 && (strlen ($POST['pseudo'])<=25))
+             if ((strlen ($POST['pseudo']) >= 3 && (strlen ($POST['pseudo'])<=25)))
              {
                echo "La longeur de votre pseudo est bien située entre 3 et 25 caractères !";
 
