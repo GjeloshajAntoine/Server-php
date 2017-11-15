@@ -1,4 +1,5 @@
 <?php
+session_start(); // indispensable d'être appelée avant tout echo et donc placé en haut de l'index pour passer avant toutes les views qui pourrait être inclues
 define('Controller',"controller/"); //définition de constante (manière de le noter systématiquement)
 define('Views','views/'); //définition de constante (manière de le noter systématiquement)
 

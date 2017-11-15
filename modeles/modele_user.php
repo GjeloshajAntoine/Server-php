@@ -27,11 +27,12 @@ function log_in($pseudo,$pass)
   if( count($data)!= 0) // Si il y a une ligne (pas égale à 0) qui correspond, alors l'utilisateur existe et pseudo et pass corresponde à ceux stocké dans la DB
   {
     echo "On donne accès en écriture au chatbox";
+    $_SESSION ['pseudo'] = $pseudo;
   }
   else
   {
     echo "On ne donne pas accès en écriture au chatbox";
   }
-//  $number_of_rows = count($ps->fetchAll());
 }
+
 ?>
