@@ -2,7 +2,7 @@
 function linkDB(){
 	try
 	{ //insérer IP valable à la place de localhost
-		return $db = new PDO('mysql:host=localhost;dbname=server-php;charset=utf8', 'root', 'root');
+		return $db = new PDO('mysql:host=localhost;dbname=server-php;charset=utf8', 'root', '');
 	}
 	catch(Exception $e)
 	{
