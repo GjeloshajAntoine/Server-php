@@ -2,7 +2,7 @@
 class ChatBoxController{
   public function __construct(){}
   public function run(){
-    include("modele_message.php");
+    include("modeles/modele_message.php");
     // function add($message, $auteur) {
     // 	linkDB();
     // 	$req =$db->prepare("INSERT INTO messages (message, auteur, dateEnvoi) VALUES(:message, :auteur, NOW())");
