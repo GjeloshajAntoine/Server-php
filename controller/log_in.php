@@ -5,7 +5,7 @@ class LoginController{
     require_once Views . 'formulaire_login.php';
     include "modeles/modele_user.php";
 
-    if ($_POST["pseudo"]=="" && $_POST["email"]=="" )
+    if (!isset($_POST["pseudo"]) && !isset($_POST["pass"]) )
     {
       echo "Votre pseudo ou votre mot de passe n'a pas été encodé !";
     }
