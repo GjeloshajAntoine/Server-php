@@ -24,7 +24,7 @@ function log_in($pseudo,$pass)
   ]);
 
   $data=$req->fetchAll();// Array donc chaque ligne va représenter un utilisateur
-  if count($data)!= 0 // Si il y a une ligne (pas égale à 0) qui correspond, alors l'utilisateur existe et pseudo et pass corresponde à ceux stocké dans la DB
+  if( count($data)!= 0) // Si il y a une ligne (pas égale à 0) qui correspond, alors l'utilisateur existe et pseudo et pass corresponde à ceux stocké dans la DB
   {
     echo "On donne accès en écriture au chatbox";
   }
