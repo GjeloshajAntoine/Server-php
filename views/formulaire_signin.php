@@ -12,25 +12,6 @@
 
   <body>
 
-    <form action="../controller/new_user.php" method="post">
-
-      <div>
-        <label for="pseudo">Pseudo : </label>
-        <input type = "text" id="pseudo" />
-      </div>
-
-      <div>
-        <label for="email">Email : </label>
-        <input type = "email" id="email" />
-      </div>
-
-      <div>
-        <label for="pass">Mot de passe :</label>
-        <input type = "pass" id="pass" />
-      </div>
-
-    </form>
-
     <h2>Formulaire d'inscription</h2>
 
         <form action="index.php?action=signupform" onsubmit="return verifForm(this)" method="post">
