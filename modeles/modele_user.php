@@ -1,6 +1,6 @@
 <?php
 
-
+//echo "ON EST DANS MODELE USER";
 function add_membres ($pseudo, $email, $pass)
 {
   $db = new PDO('mysql:host=localhost;dbname=server-php;charset=utf8', 'root', 'root'); //déclaration DB
