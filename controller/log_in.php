@@ -9,8 +9,11 @@ class LoginController{
     {
       echo "Votre pseudo ou votre mot de passe n'a pas été encodé !";
     }
+    else
+    {
+      log_in($_POST["pseudo"],$_POST["pass"]);
+    }
 
-    log_in($_POST["pseudo"],$_POST["pass"]);
   }
 }
  ?>
