@@ -8,7 +8,7 @@ function isAvailable($pseudo)
   $req = $db->prepare('SELECT id FROM membres WHERE pseudo=:pseudo');
   $req->execute(['pseudo'=>$pseudo]);
   $data = $req->fetch();
-  return $data;
+  return !$data;
 }
 
 function add_membres ($pseudo, $email, $pass)
