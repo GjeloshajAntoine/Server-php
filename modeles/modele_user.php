@@ -5,7 +5,7 @@ function isAvailable($pseudo)
 {
   $db = new PDO('mysql:host=localhost;dbname=server-php;charset=utf8', 'root', ''); //déclaration DB
 
-  $req = $db->prepare('SELECT id INTO membres WHERE pseudo=:pseudo');
+  $req = $db->prepare('SELECT id FROM membres WHERE pseudo=:pseudo');
   $req->execute(['pseudo'=>$pseudo]);
   $data = $req->fetch();
   return $data;
